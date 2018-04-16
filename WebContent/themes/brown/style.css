@@ -1,0 +1,193 @@
+#warp {
+	background:#281300 url(images/bg-head.jpg) repeat-x;
+	padding-bottom:20px;
+}
+.stickyNews {
+	background:url(images/badge-new.png) no-repeat left top;
+}
+#freshCake {
+	background:url(images/swirlborder.png) no-repeat bottom;
+}
+#chooseCake {
+	background:url(images/swirlborder.png) no-repeat top;
+}
+a.prevButton {
+	background:url(images/previous.png) no-repeat bottom center;
+}
+a.prevButton:hover {
+	background:url(images/previous.png) no-repeat top center;
+}
+a.nextButton {
+	background:url(images/next.png) no-repeat bottom center;
+}
+a.nextButton:hover {
+	background:url(images/next.png) no-repeat top center;
+}
+.commentPost #submit {
+	background:url(images/submit.png) no-repeat;
+}
+.comment-right {
+	background:url(images/commenttail.png) no-repeat;
+}
+.totalComment {
+	background:url(images/bg-comment.png) no-repeat;
+}
+.post blockquote {
+	background:url(images/quote.png) no-repeat left top;
+}
+.commentPages a.commentPageActive {
+	background:url(images/bg-commentPage.png) no-repeat 1px 5px;
+}
+#nextSubmit {
+	background:url(images/submitnext.png) no-repeat;
+}
+#checkout {
+	background:url(images/checkout.png) no-repeat;
+}
+.billInfo a.sameInfo {
+	background:url(images/sameinfo.png) no-repeat;
+}
+.cancel {
+	background:url(images/cancel.png) no-repeat;
+}
+.update {
+	background:url(images/update.png) no-repeat;
+}
+.newAccountButton {
+	background:url(images/newaccount.png) no-repeat;
+}
+.userLogin {
+	background:url(images/login.png) no-repeat;
+}
+.addCart {
+	background:url(images/addcart.png) no-repeat;
+}
+.viewOrder {
+	background:url(images/vieworder.png) no-repeat;
+}
+.continueShop {
+	background:url(images/continueshop.png) no-repeat;
+}
+.updateCart {
+	background:url(images/updatecart.png) no-repeat;
+}
+.checkoutCart {
+	background:url(images/checkoutcart.png) no-repeat;
+}
+.sumWarp ul li a {
+	background:#140900 url(images/arrow2.png) no-repeat 8px 11px;
+}
+.sumWarp ul li a:hover, .sumWarp ul li a.billActive {
+	background:#FF9900 url(images/arrow2.png) no-repeat 8px 2px;
+	color:#140900;
+}
+.sumWarp ul li a.down {
+	background:#140900 url(images/arrow3.png) no-repeat 8px 11px;
+}
+.sumWarp ul li a.down:hover {
+	background:#FF9900 url(images/arrow3.png) no-repeat 8px 2px;
+	color:#140900;
+}
+.sumWarp ul li a.billDie {
+	background:#140900 url(images/arrow4.png) no-repeat 8px 10px;
+	color:#5B2F0D;
+}
+.popularCakes ul li, .recommended ul li, .specialOffer ul li, .fromBlog ul li, .corporateInfo ul li, .storeDelivery ul li, .categories ul li, .post ul li {
+	background:url(images/arrow.gif) no-repeat 0 5px;
+	padding-left:10px;
+}
+.orderPhone {
+	background:url(images/orderphone.jpg) no-repeat left top;
+	height:190px;
+}
+#footer {
+	background:#281300 url(images/bg-footer.jpg) repeat-x bottom;
+}
+a.facebook {
+	background:url(images/facebook.png) no-repeat top center;
+}
+a.facebook:hover {
+	background:url(images/facebook.png) no-repeat bottom center;
+}
+a.twitter {
+	background:url(images/twitter.png) no-repeat top center;
+}
+a.twitter:hover {
+	background:url(images/twitter.png) no-repeat bottom center;
+}
+a.twitterSmall {
+	background:url(images/twittersmall.png) no-repeat top center;
+}
+a.twitterSmall:hover {
+	background:url(images/twittersmall.png) no-repeat bottom center;
+}
+a.feed {
+	background:url(images/feed.png) no-repeat top center;
+}
+a.feed:hover {
+	background:url(images/feed.png) no-repeat bottom center;
+}
+a.feedSmall {
+	background:url(images/feedsmall.png) no-repeat top center;
+}
+a.feedSmall:hover {
+	background:url(images/feedsmall.png) no-repeat bottom center;
+}
+a, .headLine h3, .orderPhone h4, .fromBlog h5, .footMenu p span, .footMenu p span a, .footMenu p a:hover, .dapurBlog h3, dl.subscriber dd span, dl.follower dd span, .categories h4, .freshOven h4, .fiveStar h4, .flickr h4, .shareThis p span, .commentPost label, #headright .login span.myAccount a, .billInfo form label, .setmyAccount form label, .setBillInfo form label, .newAccount form label, .loginPage form label, .setmyAccount h4, .setBillInfo h4, .newAccount h4, .loginPage h4, .youLike h3, .sideBarWarp h3, .sideBarWarp form label, .prodHeadline h3 {
+	color:#FF9900;
+}
+dl.subscriber dd, dl.follower dd {
+	color:#703D00;
+}
+.postInfo p {
+	color:#713E00;
+}
+body, a:hover, #headright h3.login a:hover, .aActive, a.bookMan:hover, .orderPhone h4 span, .footMenu p a, .totalComment a, #headright .login span.hiUser, #headright .login span.myAccount {
+	color:#fff;
+}
+#headright h3.login, #headright h3.login a, a.bookMan {
+	color:#FF6666;
+}
+.fromBlog h4, .corporateInfo h4, .storeDelivery h4, .socialNet h4, .lastTweet h4 {
+	color:#5E2B00;
+}
+.lastTweet p span, .comment-right small a {
+	color:#713D00;
+}
+#fresh {
+	background:#40210B;
+	border-top:1px solid #5B2F0D;
+	border-bottom:1px solid #5B2F0D;
+}
+#richContent {
+	background:#281300;
+}
+#richContent2 {
+	background:#1E0D00;
+	border-top:1px solid #40210B;
+}
+.productsWarp ul li img, .post img, .banner250 img, .freshOven ul li a:hover, .flickr ul li a:hover, .productThumb ul li a:hover {
+	border:1px solid #fff;
+}
+.freshOven ul li a, .flickr ul li a {
+	border:1px solid #1E0D00;
+}
+.productThumb ul li a {
+	border:1px solid #281300;
+}
+.commentPost fieldset, .billInfo form fieldset, .setmyAccount form fieldset, .setBillInfo form fieldset, .newAccount form fieldset, .loginPage form fieldset {
+	border:1px solid #5B2F0D;
+	background:#40210B;
+}
+.post, #comments {
+	border-bottom:1px dashed #4F2600;
+}
+.banner250, .categories, .freshOven, .fiveStar, .flickr, .commentText, .sumWarp {
+	background:#1E0D00;
+}
+.categories h4, .freshOven h4, .flickr h4, .shareThis, .sideBarWarp {
+	background:#140900;
+}
+.prodNav {
+	border-bottom:1px solid #4F2600;
+}

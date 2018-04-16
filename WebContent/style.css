@@ -1,0 +1,805 @@
+html, body, #wrap {
+	height:100%;
+}
+body > #wrap {
+	height:auto;
+	min-height:100%;
+}
+a {
+	text-decoration:none;
+}
+a.bookMan {
+	font-family:"Bookman Old Style", Georgia;
+	font-weight:bold;
+	font-style:italic;
+}
+#logo h1 {
+	text-indent:-9999px;
+	background:transparent url(images/dapurkue.png) no-repeat;
+}
+#logo h1 a {
+	display:block;
+	height:105px;
+	width:220px;
+}
+#logo h2 {
+	display:none;
+}
+#headright {
+	text-align:right;
+}
+#headright h3.login {
+	font:bold 16px/120% "Bookman Old Style", Georgia;
+	text-transform:uppercase;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+#headright .login span.hiUser, #headright .login span.myAccount {
+	font-size:12px;
+	text-transform:capitalize;
+	font:normal 12px Arial, Helvetica;
+	margin:0;
+}
+#headright .login span.myAccount a {
+	margin-right:15px;
+}
+#headright p {
+	margin:2px 0;
+}
+#headright span {
+	font-size:9px;
+	margin-left:10px;
+	text-transform:uppercase;
+}
+#mainMenu {
+	font:bold italic 16px/120% "Bookman Old Style", Georgia;
+}
+#mainMenu ul li {
+	list-style:none;
+	float:left;
+	margin:0 20px 0 0;
+}
+#stickySearch {
+	margin-top:22px;
+}
+.stickyNews p {
+	font-size:14px;
+	padding:8px 0 0 45px;
+}
+.search {
+	background:url(images/search.jpg) no-repeat;
+	margin-top:5px;
+	height:26px;
+}
+.search form input {
+	border:none;
+	padding:3px 5px;
+	margin-left:10px;
+	margin-top:3px;
+	width:130px;
+	height:16px;
+}
+.pageInfo {
+	border-bottom:1px solid #4F2600;
+}
+.dapurBlog h3 {
+	font:bold italic 32px "Bookman Old Style", Georgia;
+	margin-bottom:8px;
+}
+.feedTwit dl {
+	margin-bottom:8px;
+}
+dl.subscriber {
+	float:left;
+}
+dl.follower {
+	float:right;
+}
+dl.subscriber dt, dl.subscriber dd, dl.follower dt, dl.follower dd {
+	float:left;
+}
+dl.subscriber dd, dl.follower dd {
+	font-size:12px;
+	margin-left:10px;
+}
+dl.subscriber dd span, dl.follower dd span {
+	font-size:18px;
+}
+.bodyContent {
+	margin-top:20px;
+}
+.productsWarp {
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	width:940px;
+	height:398px;
+}
+.productsWarp ul {
+	list-style:none;
+	margin:0;
+	width:20000em;
+	position:absolute;
+}
+.productsWarp ul li {
+	list-style:none;
+	float:left;
+	margin:0;
+}
+.headLine h3 {
+	text-align:center;
+	font:bold italic 32px/120% "Bookman Old Style", Georgia;
+}
+.youLike h3 {
+	text-align:center;
+	font:bold italic 32px/120% "Bookman Old Style", Georgia;
+	padding-top:30px;
+}
+#fresh {
+	padding-top:5px;
+	padding-bottom:10px;
+}
+.newCakes {
+	display:inline;
+	float:left;
+	position:relative;
+	width:960px;
+	margin-top:20px;
+	overflow:hidden;
+	height:120px;
+}
+.scroller {
+	width:20000em;
+	position:absolute;
+}
+.cake-row {
+	float:left;
+	width:960px;
+}
+.bodyContent .newCakes {
+	left:-10px;
+}
+.newCake {
+	margin:0;
+	float:left;
+	list-style:none;
+}
+.productThumb ul li a {
+	height:60px;
+	width:100px;
+	display:block;
+}
+a.prevButton {
+	display:block;
+	width:19px;
+	height:19px;
+	overflow:hidden;
+	text-indent:-999px;
+	margin-top:20px;
+	cursor:pointer;
+}
+a.nextButton {
+	display:block;
+	width:19px;
+	height:19px;
+	overflow:hidden;
+	text-indent:-999px;
+	margin-top:20px;
+	margin-left:21px;
+	cursor:pointer;
+}
+.postInfo h3 {
+	font-weight:normal;
+	font-size:22px;
+	margin-bottom:5px;
+	line-height:normal;
+}
+.postInfo p {
+	margin:0;
+}
+.datePost {
+	margin-right:10px;
+}
+.author, .categoryPost {
+	margin:0 10px;
+}
+.totalComment {
+	width:40px;
+	height:40px;
+	margin-top:5px;
+}
+.totalComment p {
+	font-weight:bold;
+	margin-top:11px;
+	text-align:center;
+}
+.post {
+	margin-top:10px;
+	margin-bottom:20px;
+	padding-bottom:30px;
+}
+.post p {
+	margin-top:10px;
+	margin-bottom:0;
+	font-size:13px;
+}
+.post p img {
+	float:left;
+	margin-top:0;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+.post blockquote {
+	font:italic 14px/1.5 "Bookman Old Style", Georgia;
+	padding-left:50px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.post h1 {
+	font-weight:normal;
+	font-size:24px;
+	margin-bottom:15px;
+}
+.post h2 {
+	font-weight:normal;
+	font-size:22px;
+	margin-bottom:15px;
+}
+.post h3 {
+	font-weight:normal;
+	font-size:18px;
+	margin-bottom:15px;
+}
+.post h4 {
+	font-weight:normal;
+	font-size:16px;
+	margin-bottom:15px;
+}
+.post h5 {
+	font-weight:normal;
+	font-size:14px;
+	margin-bottom:15px;
+}
+.post h6 {
+	font-weight:normal;
+	font-size:12px;
+	margin-bottom:15px;
+}
+.post ul li {
+	list-style:none;
+	padding-left:20px;
+	margin:0 0 0 20px;
+}
+.post p.readMore {
+	font:bold italic 14px/120% "Bookman Old Style", Georgia;
+	text-align:right;
+}
+.post .wp-caption {
+	font-style:italic;
+	text-align:center;
+}
+.post .alignleft {
+	float:left;
+	margin-right:20px;
+}
+.post .alignright {
+	float:right;
+	margin-left:20px;
+}
+.post .aligncenter {
+	display:block;
+	width:100%;
+}
+.shareThis {
+	clear:both;
+}
+.shareThis p span {
+	font:bold italic 16px/120% "Bookman Old Style", Georgia;
+	vertical-align:middle;
+	padding:5px 8px;
+}
+.shareThis p img {
+	vertical-align:middle;
+	padding:5px 3px;
+}
+.banner469 {
+	text-align:center;
+}
+.oldnewPage {
+	font-weight:bold;
+}
+.newPage {
+	text-align:right;
+}
+#comments {
+	padding-bottom:20px;
+}
+#comments h2 {
+	font:bold italic 24px/120% "Bookman Old Style", Georgia;
+}
+.comment-right {
+	height:100%;
+	display:block;
+}
+.comment-right cite {
+	position:relative;
+	left:20px;
+	top:-5px;
+	height:25px;
+	display:block;
+	font-style:normal;
+}
+.comment-right small a {
+	font-size:11px;
+}
+.commentText {
+	padding:10px 10px 0 10px;
+	margin-top:-7px;
+	margin-bottom:20px;
+}
+.commentText p {
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+.commentPages {
+	text-align:center;
+	margin-top:10px;
+	position:relative;
+}
+.commentPages ul {
+	list-style:none;
+	line-height:30px;
+	text-align:center;
+}
+.commentPages ul li {
+	margin:0 8px;
+	font-weight:bold;
+	list-style:none;
+	display:inline;
+}
+.commentPost h2 {
+	font:bold italic 24px/120% "Bookman Old Style", Georgia;
+}
+.commentPost fieldset {
+	padding:15px;
+}
+.commentPost label {
+	width:130px;
+	float:left;
+	font-weight:bold;
+	clear:left;
+	margin:8px 5px;
+}
+.commentPost input, .commentPost textarea {
+	float:left;
+	margin:5px;
+	padding:5px;
+	border:none;
+}
+.commentPost #submit {
+	display:block;
+	float:right;
+	width:112px;
+	height:39px;
+	text-indent:-999px;
+	cursor:pointer;
+}
+.commentPages a.commentPageActive {
+	color:#1E0D00;
+	padding:10px;
+}
+.banner250 img {
+	margin:15px;
+}
+.banner250, .categories, .freshOven, .fiveStar, .flickr {
+	margin-bottom:10px;
+}
+.categories h4, .freshOven h4, .flickr h4 {
+	margin:0;
+	padding:7px 8px;
+	font:bold italic 16px/120% "Bookman Old Style", Georgia;
+}
+.categories {
+	padding-bottom:15px;
+}
+.categories ul {
+	margin:10px 0 0 15px;
+}
+.categories ul li {
+	display:inline;
+	float:left;
+	width:120px;
+	margin:0;
+	list-style:none;
+}
+.freshOven {
+	padding-bottom:5px;
+}
+.freshOven ul li {
+	margin-top:10px;
+	list-style:none;
+}
+.freshOven ul li a {
+	display:block;
+	width:220px;
+	height:120px;
+}
+.fiveStar {
+	text-align:center;
+}
+.fiveStar h4 {
+	font:bold italic 20px "Bookman Old Style", Georgia;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+.fiveStar p {
+	margin:0 10px;
+	padding-bottom:10px;
+}
+.flickr {
+	padding-bottom:20px;
+}
+.flickr ul li {
+	list-style:none;
+	margin:10px 0 0 15px;
+	float:left;
+}
+.flickr ul li a {
+	display:block;
+	width:50px;
+	height:50px;
+}
+.billInfo, .summary {
+	margin-top:20px;
+}
+.billInfo h4 {
+	font:bold italic 20px "Bookman Old Style", Georgia;
+	float:left;
+}
+.setmyAccount h4, .setBillInfo h4, .newAccount h4, .loginPage h4 {
+	font:bold italic 32px "Bookman Old Style", Georgia;
+}
+.summary h4 {
+	font:bold italic 20px "Bookman Old Style", Georgia;
+}
+a.sameInfo {
+	display:block;
+	float:right;
+	width:194px;
+	height:34px;
+	text-indent:-9999px;
+}
+.billInfo form, .setmyAccount form, .setBillInfo form, .newAccount form, .loginPage form {
+	clear:both;
+}
+.billInfo form fieldset, .setmyAccount form fieldset, .setBillInfo form fieldset, .newAccount form fieldset, .loginPage form fieldset {
+	padding:20px;
+}
+.billInfo form label, .setmyAccount form label, .setBillInfo form label, .newAccount form label, .loginPage form label {
+	clear:both;
+	float:left;
+	width:120px;
+	margin:5px 0;
+	padding:2px;
+	font-weight:bold;
+}
+.billInfo form label.delivery {
+	width:170px;
+	vertical-align:top;
+}
+.billInfo form input.text, .setmyAccount form input.text, .setBillInfo form input.text, .newAccount form input.text, .loginPage form input.text {
+	padding:4px 3px;
+	margin:5px 0;
+}
+.billInfo form select, .setmyAccount form select, .setBillInfo form select, .newAccount form select, .loginPage form select {
+	margin:5px 0;
+}
+#nextSubmit, .cancel, .update, .newAccountButton, .userLogin, #checkout {
+	display:block;
+	text-indent:-999px;
+	cursor:pointer;
+	float:right;
+	border:none;
+}
+#nextSubmit, .cancel, .update {
+	height:38px;
+}
+.newAccountButton, .userLogin {
+	height:39px;
+}
+#nextSubmit {
+	width:93px;
+}
+.cancel {
+	width:92px;
+}
+.update {
+	width:114px;
+}
+.newAccountButton {
+	width:254px;
+}
+.userLogin {
+	width:153px;
+}
+#checkout {
+	width:272px;
+	height:40px;
+}
+.billInfo form input, .setmyAccount form input, .setBillInfo form input {
+	vertical-align:middle;
+}
+.billInfo dl {
+	margin-bottom:30px;
+}
+.billInfo dl dt {
+	color:#FF9900;
+	font-weight:bold;
+}
+.billInfo dl dd {
+	margin-top:5px;
+	margin-left:15px;
+}
+.sumWarp ul {
+	list-style:none;
+	margin:0;
+}
+.sumWarp ul li {
+	margin:0 0 2px 0;
+	font-size:14px;
+}
+.sumWarp ul li a, .sumWarp ul li a.down {
+	display:block;
+	padding:5px 5px 5px 25px;
+}
+.sumWarp ul li ul {
+	margin:8px;
+}
+.sumWarp ul li ul li.info {
+	font-size:11px;
+	float:left;
+	width:195px;
+}
+.sumWarp ul li ul li.edit {
+	width:65px;
+	float:right;
+	font-size:9px;
+	text-align:right;
+}
+.sumWarp ul li ul li.total {
+	width:65px;
+	float:right;
+	font-size:11px;
+	text-align:right;
+}
+.sumWarp ul li ul li a {
+	background:none;
+	padding:0;
+	display:inline;
+}
+.sumWarp ul li ul li a:hover {
+	background:none;
+	color:#fff;
+}
+.sumWarp ul li span {
+	float:right;
+	margin-top:3px;
+	margin-right:5px;
+}
+.products {
+	border-bottom:1px solid #4F2600;
+	margin-bottom:20px;
+}
+.prodMenu {
+	clear:both;
+	margin-bottom:25%;
+}
+.prodMenu h4 {
+	font:bold italic 20px "Bookman Old Style", Georgia;
+}
+a.viewAll {
+	font:normal 12px Arial, Helvetica;
+}
+.menu p {
+	font-size:14px;
+}
+.prodNav {
+	padding-bottom:10px;
+	margin-top:15px;
+}
+.prodHeadline h3 {
+	font:bold italic 32px "Bookman Old Style", Georgia;
+	margin-bottom:0;
+	margin-top: 0;
+}
+.breadcrumb {
+	font-weight:bold;
+}
+.breadcrumb a {
+	font-weight:normal;
+}
+.browseCategory {
+	text-align:right;
+}
+.sideBarProd {
+	margin-top:8px;
+}
+.sideBarWarp {
+	margin-bottom:30px;
+	padding:20px;
+}
+.sideBarWarp h3 {
+	font:bold italic 23px/120% "Bookman Old Style", Georgia;
+}
+.sideBarWarp h4 {
+	font-size:14px;
+}
+.sideBarWarp form label {
+	font-weight:bold;
+}
+.addCart {
+	display:block;
+	width:134px;
+	height:34px;
+	text-indent:-999px;
+	cursor:pointer;
+	border:none;
+}
+.sideBarWarp ul li {
+	float:left;
+	margin:0 10px 0 0;
+	list-style:none;
+}
+a.viewOrder {
+	display:block;
+	width:282px;
+	height:39px;
+	text-indent:-999px;
+	cursor:pointer;
+	border:none;
+}
+.headCart {
+	background:#1E0D00;
+	padding:8px 0;
+	font:bold italic 14px "Bookman Old Style", Georgia;
+	color:#FF9900;
+	text-align:center;
+}
+.bodyCart {
+	text-align:center;
+	border:1px solid #5B2F0D;
+	background:#40210B;
+}
+.warpCart {
+	clear:both;
+	vertical-align:middle;
+	border-bottom:1px solid #5B2F0D;
+}
+.item, .price, .qty, .subtotal, .remove {
+	padding:15px 0 5px;
+}
+.item p {
+	text-align:left;
+	font-weight:bold;
+}
+.item p span {
+	font-weight:normal;
+}
+.item p img {
+	float:left;
+	margin:0 15px;
+	border:1px solid #fff;
+}
+.qty input {
+	font-weight:bold;
+	padding:3px;
+	text-align:center;
+}
+.subtotal p {
+	font-weight:bold;
+}
+.footCart {
+	margin-bottom:15px;
+	padding:10px 0;
+	background:#1E0D00;
+}
+.grandTotal {
+	font:bold italic 20px/120% "Bookman Old Style", Georgia;
+	color:#FF9900;
+}
+.totalPrice {
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+}
+.buttonCart {
+	margin-bottom:40px;
+}
+.continueShop, .updateCart, .checkoutCart {
+	display:block;
+	height:38px;
+	text-indent:-999px;
+	cursor:pointer;
+	border:none;
+	float:left;
+}
+.continueShop {
+	width:174px;
+}
+.updateCart {
+	width:123px;
+}
+.checkoutCart {
+	width:153px;
+}
+.popularCakes h4, .recommended h4, .specialOffer h4 {
+	margin-top:30px;
+	margin-bottom:10px;
+	font:bold italic 20px/120% "Bookman Old Style", Georgia;
+}
+.popularCakes ul li, .recommended ul li, .specialOffer ul li, .fromBlog ul li, .corporateInfo ul li, .storeDelivery ul li {
+	list-style:none;
+	margin:0;
+}
+.socialNet ul li {
+	float:left;
+	margin:0 8px 0 0;
+	list-style:none;
+}
+.orderPhone h4 {
+	padding-top:70px;
+	font:bold 16px/120% "Bookman Old Style", Georgia;
+	text-indent:75px;
+}
+.orderPhone h4 span {
+	display:block;
+	font-family:Arial;
+	font-size:24px;
+}
+.fromBlog h4, .corporateInfo h4, .storeDelivery h4, .socialNet h4, .lastTweet h4 {
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:20px;
+}
+.fromBlog h5 {
+	margin-bottom:5px;
+	font-size:14px;
+}
+a.facebook, a.twitter, a.twitterSmall, a.feed, a.feedSmall {
+	display:block;
+	overflow:hidden;
+	text-indent:-999px;
+}
+a.facebook {
+	width:54px;
+	height:55px;
+}
+a.twitter {
+	width:56px;
+	height:56px;
+}
+a.twitterSmall {
+	width:39px;
+	height:38px;
+}
+a.feed {
+	width:55px;
+	height:61px;
+}
+a.feedSmall {
+	width:39px;
+	height:43px;
+}
+#footer .copyright, #footer .copyright a {
+	color:#FF9900;
+}
+#footer .copyright p {
+	margin:10px 0;
+}
+#footer .copyright p.left {
+	float:left;
+}
+#footer .copyright p.right {
+	float:right;
+}
