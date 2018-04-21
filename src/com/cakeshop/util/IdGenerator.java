@@ -5,4 +5,8 @@ public class IdGenerator {
 	public String getItemId() {
 		return "ITM_" + System.currentTimeMillis();
 	}
+	
+	public String getCustomerId() {
+		return "CST_" + System.currentTimeMillis();
+	}
 }
