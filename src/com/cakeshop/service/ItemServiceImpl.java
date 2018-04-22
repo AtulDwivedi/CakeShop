@@ -2,14 +2,21 @@ package com.cakeshop.service;
 
 import java.util.List;
 
+import com.cakeshop.dao.ItemDao;
+import com.cakeshop.dao.ItemDaoImpl;
 import com.cakeshop.domain.Item;
 
 public class ItemServiceImpl implements ItemService {
+	
+	private ItemDao itemDao;
+	
+	public ItemServiceImpl() {
+		this.itemDao = new ItemDaoImpl();
+	}
 
 	@Override
 	public String saveItem(Item item) {
-		// TODO Auto-generated method stub
-		return null;
+		return itemDao.saveItem(item);
 	}
 
 	@Override
@@ -23,5 +30,4 @@ public class ItemServiceImpl implements ItemService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
