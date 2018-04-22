@@ -2,7 +2,7 @@ package com.cakeshop.util;
 
 public class IdGenerator {
 
-	public String getItemId() {
+	public static String getItemId() {
 		return "ITM_" + System.currentTimeMillis();
 	}
 	
