@@ -6,3 +6,13 @@ CREATE TABLE cs_item
      price       DECIMAL, 
      quantity    NUMBER 
   );
+  
+CREATE TABLE cs_address(
+FlatNo varchar(10),
+Area varchar(30),
+Landmark varchar(30),
+PinCode number(8),
+City varchar(30),
+State varchar(30),
+Country varchar(30)
+);
