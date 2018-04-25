@@ -2,6 +2,7 @@ package com.cakeshop.domain;
 
 public class Address {
 	
+	private String id;
 	private String flatNo;
 	private String area;
 	private String landMark;
@@ -10,6 +11,12 @@ public class Address {
 	private String state;
 	private String country;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getFlatNo() {
 		return flatNo;
 	}
@@ -53,5 +60,24 @@ public class Address {
 		this.country = country;
 	}
 	
-
+	public Address(String id, String flatNo, String area, String landMark, long pinCode, String city, String state,
+			String country) {
+		super();
+		this.id = id;
+		this.flatNo = flatNo;
+		this.area = area;
+		this.landMark = landMark;
+		this.pinCode = pinCode;
+		this.city = city;
+		this.state = state;
+		this.country = country;
+	}
+	
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", flatNo=" + flatNo + ", area=" + area + ", landMark=" + landMark + ", pinCode="
+				+ pinCode + ", city=" + city + ", state=" + state + ", country=" + country + "]";
+	}
+	
+	
 }
