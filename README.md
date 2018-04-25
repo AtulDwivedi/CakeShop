@@ -15,3 +15,4 @@ Welcome to **CakeShop**, a purely open source project base on JEE technologies.
 - [@akashluck](https://github.com/akashluck)
 - [@Souptik12](https://github.com/Souptik12)
 - [@AmulyaSadashiv](https://github.com/AmulyaSadashiv)
+- [Atul Dwivedi](https://github.com/AtulDwivedi)
