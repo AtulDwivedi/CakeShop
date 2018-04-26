@@ -11,7 +11,7 @@ import com.cakeshop.service.LoginService;
 import com.cakeshop.service.LoginServiceImpl;
 
 
-@WebServlet({ "/LoginServlet", "/Login" })
+@WebServlet({ "/LoginServlet", "/login" })
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
