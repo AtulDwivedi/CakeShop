@@ -14,7 +14,7 @@ public class DbUtil {
 		if (con == null) {
 			Class.forName("org.h2.Driver");
 
-			ResourceBundle rb = ResourceBundle.getBundle("com/cakeshop/dao/db", Locale.US);
+			ResourceBundle rb = ResourceBundle.getBundle("com//cakeshop//dao//db", Locale.US);
 			String url = rb.getString("jdbcUrl");
 			String un = rb.getString("userName");
 			String pass = rb.getString("password");
