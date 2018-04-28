@@ -6,3 +6,10 @@ CREATE TABLE cs_item
      price       DECIMAL, 
      quantity    NUMBER 
   );
+  
+  
+  CREATE TABLE CS_LOGIN
+  (
+  	email		varchar,
+  	password	varchar
+  );
