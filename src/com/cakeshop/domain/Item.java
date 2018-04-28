@@ -12,6 +12,12 @@ public class Item {
 
 	private Integer quantity;
 
+	private String imagePath;
+
+	private String category;
+
+	private String subCategory;
+
 	public String getId() {
 		return id;
 	}
@@ -56,19 +62,48 @@ public class Item {
 		super();
 	}
 
-	public Item(String id, String name, String description, Double price, Integer quantity) {
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", quantity="
+				+ quantity + ", imagePath=" + imagePath + ", category=" + category + ", subCategory=" + subCategory
+				+ "]";
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getSubCategory() {
+		return subCategory;
+	}
+
+	public void setSubCategory(String subCategory) {
+		this.subCategory = subCategory;
+	}
+
+	public Item(String id, String name, String description, Double price, Integer quantity, String imagePath,
+			String category, String subCategory) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.quantity = quantity;
-	}
-
-	@Override
-	public String toString() {
-		return "Item [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", quantity="
-				+ quantity + "]";
+		this.imagePath = imagePath;
+		this.category = category;
+		this.subCategory = subCategory;
 	}
 
 }

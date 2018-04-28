@@ -1,6 +1,7 @@
 package com.cakeshop.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.cakeshop.dao.ItemDao;
 import com.cakeshop.dao.ItemDaoImpl;
@@ -28,5 +29,15 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public List<Item> getItems() {
 		return itemDao.getItems();
+	}
+
+	@Override
+	public Map<String, List<Item>> getItemsByCategory(String category) {
+		return itemDao.getItemsByCategory(category);
+	}
+
+	@Override
+	public List<Item> getItemsByCategoryAndSubCategory(String category, String subCategory) {
+		return itemDao.getItemsByCategoryAndSubCategory(category, subCategory);
 	}
 }

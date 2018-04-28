@@ -2,6 +2,7 @@ package com.cakeshop.servlet;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,19 +28,26 @@ public class ItemServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String requestedUrl = request.getRequestURI();
-		
-		if(requestedUrl.contains("all")) {
-//			write the logic to fetch all items
+		if (requestedUrl.contains("all")) {
 			List<Item> items = itemService.getItems();
 			request.setAttribute("items", items);
-			request.getRequestDispatcher("/all-items.jsp").forward(request, response);
-			
+			request.getRequestDispatcher("/product-overview.jsp").forward(request, response);
+
+		} else if (requestedUrl.contains("itm")) {
+
+		} else if (requestedUrl.contains("byCat")) {
+			String category = request.getParameter("category");
+			Map<String, List<Item>> items = itemService.getItemsByCategory(category);
+			request.setAttribute("itemsMap", items);
+			request.getRequestDispatcher("/items-by-category.jsp").forward(request, response);
+		} else if (requestedUrl.contains("bySubCat")) {
+			String category = request.getParameter("category");
+			String subCategory = request.getParameter("subCategory");
+			List<Item> items = itemService.getItemsByCategoryAndSubCategory(category, subCategory);
+			request.setAttribute("items", items);
+			request.getRequestDispatcher("/items-by-sub-category.jsp").forward(request, response);
 		}
-		else if(requestedUrl.contains("itm")) {
-			
-		}
-		
-		
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

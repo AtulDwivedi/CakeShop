@@ -4,9 +4,13 @@ CREATE TABLE cs_item
      NAME        VARCHAR2(255), 
      description VARCHAR(2000), 
      price       DECIMAL, 
-     quantity    NUMBER 
+     quantity    NUMBER,
+     category	 varchar(55),
+     sub_category varchar(255),
+     image_path VARCHAR(2000)
   );
   
+  insert into cs_item values('ITM_1001', 'Delicious Cheesecake', 'Delicious Cheesecake in Huge Pan With Choco Slices', 100.50, 10, 'cake', 'Brownies', 'images/items/freshCake1.jpg');
   
   CREATE TABLE CS_LOGIN
   (
