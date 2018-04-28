@@ -1,6 +1,7 @@
 package com.cakeshop.servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,6 +26,20 @@ public class ItemServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String requestedUrl = request.getRequestURI();
+		
+		if(requestedUrl.contains("all")) {
+//			write the logic to fetch all items
+			List<Item> items = itemService.getItems();
+			request.setAttribute("items", items);
+			request.getRequestDispatcher("/all-items.jsp").forward(request, response);
+			
+		}
+		else if(requestedUrl.contains("itm")) {
+			
+		}
+		
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

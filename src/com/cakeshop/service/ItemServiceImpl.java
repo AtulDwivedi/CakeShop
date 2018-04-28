@@ -27,7 +27,6 @@ public class ItemServiceImpl implements ItemService {
 
 	@Override
 	public List<Item> getItems() {
-		// TODO Auto-generated method stub
-		return null;
+		return itemDao.getItems();
 	}
 }

@@ -2,7 +2,10 @@ package com.cakeshop.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.cakeshop.domain.Item;
@@ -44,7 +47,28 @@ public class ItemDaoImpl implements ItemDao {
 
 	@Override
 	public List<Item> getItems() {
-		return null;
+		List<Item> items = new ArrayList<>();
+
+		try (Connection con = DbUtil.getConnection(); Statement stmt = con.createStatement()) {
+			ResultSet rs = stmt.executeQuery("SELECT * FROM CS_ITEM");
+
+			while (rs.next()) {
+				Item item = new Item();
+
+				item.setId(rs.getString(1));
+				item.setName(rs.getString(2));
+				item.setDescription(rs.getString(3));
+				item.setPrice(rs.getDouble(4));
+				item.setQuantity(rs.getInt(5));
+
+				items.add(item);
+			}
+
+		} catch (SQLException | ClassNotFoundException e) {
+
+		}
+
+		return items;
 	}
 
 }
