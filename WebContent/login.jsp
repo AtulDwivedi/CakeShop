@@ -46,7 +46,7 @@
     <div class="checkout grid_16">
       <div class="newAccount grid_8 alpha">
         <h4>Create New Account</h4>
-        <form method="post" action="#">
+        <form method="post" action="CustomerServlet">
           <fieldset>
             <label for="firstName">First Name: </label>
             <input type="text" tabindex="1" size="22" value="" id="firstName" name="firstName" class="text" />
