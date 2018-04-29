@@ -20,7 +20,6 @@ public class LoginServlet extends HttpServlet {
     public LoginServlet() {
         super();
         this.loginservice = new LoginServiceImpl();
-        // TODO Auto-generated constructor stub
     }
 
 	
@@ -40,7 +39,8 @@ public class LoginServlet extends HttpServlet {
 			response.getWriter().print("You are succesfully login: " + em);
 		}
 		else{
-			response.getWriter().print("Invalid Email id/ password");
+			request.setAttribute("loginMsg", "Incorrect details.");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
 	}
 

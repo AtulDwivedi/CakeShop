@@ -13,7 +13,7 @@
         <h2>Famously Delicious</h2>
       </div>
       <div id="headright" class="grid_7 prefix_5 omega">
-        <h3 class="login"><a href="login.html">Sign up</a> / <a href="login.html">Login</a></h3>
+        <h3 class="login"><a href="login.jsp">Sign up</a> / <a href="${pageContext.request.contextPath}/login.jsp">Login</a></h3>
         <p>Subtotal: $ 00.00</p>
         <p><span class="vChart"><a href="shoppingcart.html">View Cart</a></span> <span class="cOut"><a href="checkout.html">Checkout</a></span></p>
       </div>
