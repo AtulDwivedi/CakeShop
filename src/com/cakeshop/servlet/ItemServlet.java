@@ -34,7 +34,9 @@ public class ItemServlet extends HttpServlet {
 			request.getRequestDispatcher("/product-overview.jsp").forward(request, response);
 
 		} else if (requestedUrl.contains("itm")) {
-
+			Item item = itemService.getItem(request.getParameter("id"));
+			request.setAttribute("item", item);
+			request.getRequestDispatcher("/product-details.jsp").forward(request, response);
 		} else if (requestedUrl.contains("byCat")) {
 			String category = request.getParameter("category");
 			Map<String, List<Item>> items = itemService.getItemsByCategory(category);

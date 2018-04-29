@@ -45,14 +45,13 @@
 							varStatus="loop">
 							<div class="menu grid_4 alpha">
 								<p>
-									<a href="#" class="grid_4 alpha"><img
+									<a href="itm?id=${item.id}" class="grid_4 alpha"><img
 										src="${pageContext.request.contextPath}/${item.imagePath}"
 										alt="" width="220" height="120" /></a><br /> <a
-										href="/items/itm/${item.id}">${item.name}</a>
+										href="itm?id=${item.id}">${item.name}</a>
 								</p>
 							</div>
-							<c:if test="${loop.count % 2 eq 0}">
-							</c:if>
+						
 						</c:forEach>
 					</div>
 

@@ -38,15 +38,12 @@
           <h4>${itemSubCat.key} <a href="bySubCat?category=${param.category}&subCategory=${itemSubCat.key}" class="viewAll">View All &raquo;</a></h4>
           <c:forEach var="item" items="${itemSubCat.value}">
           <div class="menu grid_4 alpha">
-            <p><a href="#" class="grid_4 alpha"><img src="${pageContext.request.contextPath}/${item.imagePath}" alt="" width="220" height="120" /></a><br />
-              <a href="/items/itm/${item.id}">${item.name}</a></p>
+            <p><a href="itm?id=${item.id}" class="grid_4 alpha"><img src="${pageContext.request.contextPath}/${item.imagePath}" alt="" width="220" height="120" /></a><br />
+              <a href="itm?id=${item.id}">${item.name}</a></p>
           </div>
           </c:forEach>
         </div>
         </c:forEach>
-        
-        
-        
       </div>
       <div class="commentPages grid_16">
         <ul>

@@ -44,7 +44,17 @@ public class ItemDaoImpl implements ItemDao {
 
 	@Override
 	public Item getItem(String itemId) {
-		return null;
+		Item item = null;
+
+		try (Connection con = DbUtil.getConnection(); Statement stmt = con.createStatement()) {
+			ResultSet rs = stmt.executeQuery("SELECT * FROM CS_ITEM WHERE ID= '" + itemId + "'");
+			List<Item> items = new ArrayList<>();
+			getItemsFromResultSet(items, rs);
+			item = items.get(0);
+		} catch (SQLException | ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		return item;
 	}
 
 	@Override
@@ -53,26 +63,10 @@ public class ItemDaoImpl implements ItemDao {
 
 		try (Connection con = DbUtil.getConnection(); Statement stmt = con.createStatement()) {
 			ResultSet rs = stmt.executeQuery("SELECT * FROM CS_ITEM");
-
-			while (rs.next()) {
-				Item item = new Item();
-
-				item.setId(rs.getString(1));
-				item.setName(rs.getString(2));
-				item.setDescription(rs.getString(3));
-				item.setPrice(rs.getDouble(4));
-				item.setQuantity(rs.getInt(5));
-				item.setCategory(rs.getString(6));
-				item.setSubCategory(rs.getString(7));
-				item.setImagePath(rs.getString(8));
-
-				items.add(item);
-			}
-
+			getItemsFromResultSet(items, rs);
 		} catch (SQLException | ClassNotFoundException e) {
-
+			e.printStackTrace();
 		}
-
 		return items;
 	}
 
@@ -93,31 +87,35 @@ public class ItemDaoImpl implements ItemDao {
 		try (Connection con = DbUtil.getConnection(); Statement stmt = con.createStatement()) {
 			ResultSet rs = stmt.executeQuery("SELECT * FROM CS_ITEM WHERE CATEGORY = '" + category
 					+ "' AND SUB_CATEGORY = '" + subCategory + "'");
-
-			while (rs.next()) {
-				Item item = new Item();
-
-				item.setId(rs.getString(1));
-				item.setName(rs.getString(2));
-				item.setDescription(rs.getString(3));
-				item.setPrice(rs.getDouble(4));
-				item.setQuantity(rs.getInt(5));
-				item.setCategory(rs.getString(6));
-				item.setSubCategory(rs.getString(7));
-				item.setImagePath(rs.getString(8));
-
-				items.add(item);
-			}
+			getItemsFromResultSet(items, rs);
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		return items;
 	}
 
+	private void getItemsFromResultSet(List<Item> items, ResultSet rs) throws SQLException {
+		while (rs.next()) {
+			Item item = new Item();
+
+			item.setId(rs.getString(1));
+			item.setName(rs.getString(2));
+			item.setDescription(rs.getString(3));
+			item.setPrice(rs.getDouble(4));
+			item.setQuantity(rs.getInt(5));
+			item.setCategory(rs.getString(6));
+			item.setSubCategory(rs.getString(7));
+			item.setImagePath(rs.getString(8));
+
+			items.add(item);
+		}
+	}
+
 	private List<String> getSubCategories(String category) {
 		List<String> subCategories = new ArrayList<>();
 		try (Connection con = DbUtil.getConnection(); Statement stmt = con.createStatement()) {
-			ResultSet rs = stmt.executeQuery("SELECT DISTINCT(SUB_CATEGORY) FROM CS_ITEM");
+			ResultSet rs = stmt
+					.executeQuery("SELECT DISTINCT(SUB_CATEGORY) FROM CS_ITEM WHERE CATEGORY = '" + category + "'");
 			while (rs.next()) {
 				subCategories.add(rs.getString(1));
 			}
