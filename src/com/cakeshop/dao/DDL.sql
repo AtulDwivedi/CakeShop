@@ -15,7 +15,8 @@ CREATE TABLE cs_item
   CREATE TABLE CS_LOGIN
   (
   	email		varchar,
-  	password	varchar
+  	password	varchar,
+  	status		varchar(50)
   );
   
   CREATE TABLE cs_address
