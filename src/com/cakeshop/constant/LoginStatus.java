@@ -4,13 +4,13 @@ public enum LoginStatus {
 
 	ENABLED("Enabled"), DISABLED("Disabled"), BLOCKED("Bloaked");
 
-	private final String loginStatus;
+	private final String status;
 
-	LoginStatus(final String loginStatus) {
-		this.loginStatus = loginStatus;
+	LoginStatus(final String newStatus) {
+		this.status = newStatus;
 	}
 
 	public String getLoginStatus() {
-		return loginStatus;
+		return status;
 	}
 }
