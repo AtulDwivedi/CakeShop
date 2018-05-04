@@ -15,7 +15,8 @@ public class AddressDaoImpl implements AddressDao {
 		String id = null;
 		String insertAddressQuery = "INSERT INTO CS_ADDRESS VALUES(?, ?, ?, ?, ?, ?, ?)";
 
-		try (Connection con = DbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement(insertAddressQuery)) {
+		try (Connection con = DbUtil.getConnection();
+				PreparedStatement pstmt = con.prepareStatement(insertAddressQuery)) {
 
 			String generatedId = IdGenerator.getAddressId();
 			pstmt.setString(1, generatedId);
@@ -37,16 +38,15 @@ public class AddressDaoImpl implements AddressDao {
 		}
 
 		return id;
-	}	
+	}
 
 	@Override
-	public Address getAddressById(String custId) {
+	public Address getAddressById(String id) {
 		return null;
 	}
 
 	@Override
-	public List<Address> getAddressbyFk(String custId) {
+	public List<Address> getAddressesByFk(String custId) {
 		return null;
 	}
-
 }

@@ -8,8 +8,7 @@ public interface AddressDao {
 	
 	public String saveAddress(Address address);
 	
-	public Address getAddressById(String custId);
+	public Address getAddressById(String id);
 	
-	public List<Address> getAddressbyFk(String custId);
-
+	public List<Address> getAddressesByFk(String custId);
 }
