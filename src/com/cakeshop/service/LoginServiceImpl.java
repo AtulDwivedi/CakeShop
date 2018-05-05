@@ -19,4 +19,9 @@ public class LoginServiceImpl implements LoginService {
 		
 	}
 
+	@Override
+	public int saveLogin(String email, String password) {
+		return logindao.saveLogin(email, password);
+	}
+
 }

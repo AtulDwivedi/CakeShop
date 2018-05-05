@@ -9,7 +9,7 @@
 <body>
  <div id="header" class="grid_16">
       <div id="logo" class="grid_4 alpha">
-        <h1><a href="index.html">CakeShop</a></h1>
+        <h1><a href="index.jsp">CakeShop</a></h1>
         <h2>Famously Delicious</h2>
       </div>
       <div id="headright" class="grid_7 prefix_5 omega">
@@ -21,7 +21,7 @@
     <div id="mainMenu" class="grid_16">
       <ul>
         <li><a href="${pageContext.request.contextPath}/index.html">Home</a></li>
-        <li><a href="#">Cakes</a></li>
+        <li><a href="items/byCat?category=Cake">Cakes</a></li>
         <li><a href="#">Order &amp; Delivery</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">About</a></li>
