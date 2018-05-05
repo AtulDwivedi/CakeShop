@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS cs_item;
+---
 CREATE TABLE cs_item 
   ( 
      id          VARCHAR PRIMARY KEY, 
@@ -21,14 +23,19 @@ insert into cs_item values('ITM_1004', 'Very Good Cheesecake', 'Very Good Cheese
 insert into cs_item values('ITM_1005', 'Ok Cheesecake', 'Ok Cheesecake in Huge Pan With Choco Slices', 500.50, 10, 'Cake', 'Milky', 'images/items/freshCake1.jpg');
 ----
 insert into cs_item values('ITM_1006', 'Ok Cheesecake', 'Ok Cheesecake in Huge Pan With Choco Slices', 600.50, 10, 'Cake', 'Milky', 'images/items/freshCake2.jpg');
-  CREATE TABLE CS_LOGIN
+----
+DROP TABLE IF EXISTS CS_LOGIN;
+----
+CREATE TABLE CS_LOGIN
   (
   	email		varchar,
   	password	varchar,
   	status		varchar(50)
   );
 ----
-INSERT INTO CS_LOGIN VALUES('admin@cakshop.com', 'password', 'Enabled');
+INSERT INTO CS_LOGIN VALUES('admin@cakeshop.com', 'password', 'Enabled');
+----
+DROP TABLE IF EXISTS cs_address;
 ----
   CREATE TABLE cs_address
 (
@@ -41,6 +48,13 @@ INSERT INTO CS_LOGIN VALUES('admin@cakshop.com', 'password', 'Enabled');
 	City varchar(30),
 	State varchar(30),
 	Country varchar(30)
+);
+----
+CREATE TABLE CS_CUSTOMER(
+id varchar primary key,
+first_name varchar,
+last_name varchar,
+email varchar
 );
 ----
 stop

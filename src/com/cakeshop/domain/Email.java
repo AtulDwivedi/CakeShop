@@ -2,8 +2,6 @@ package com.cakeshop.domain;
 
 public class Email {
 
-	private String fromAddress;
-	
 	private String toAddress;
 
 	private String ccAddress;
@@ -58,13 +56,5 @@ public class Email {
 		super();
 	}
 
-	public String getFromAddress() {
-		return fromAddress;
-	}
 
-	public void setFromAddress(String fromAddress) {
-		this.fromAddress = fromAddress;
-	}
-	
-	
 }

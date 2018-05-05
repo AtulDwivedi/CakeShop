@@ -15,6 +15,6 @@
 
 	<context-param>
 		<param-name>CreateBaseData</param-name>
-		<param-value>Yes</param-value>
+		<param-value>yes</param-value>
 	</context-param>
 </web-app>
