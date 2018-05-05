@@ -11,5 +11,4 @@ public interface AddressDao {
 	public Address getAddressById(String id);
 	
 	public List<Address> getAddressesByFk(String custId);
-
 }
