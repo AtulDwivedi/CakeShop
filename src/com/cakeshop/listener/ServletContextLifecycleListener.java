@@ -1,35 +1,30 @@
 package com.cakeshop.listener;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-/**
- * Application Lifecycle Listener implementation class ServletContextLifecycleListener
- *
- */
+import com.cakeshop.dao.BaseDataDao;
+import com.cakeshop.dao.BaseDataDaoImpl;
+
 @WebListener
 public class ServletContextLifecycleListener implements ServletContextListener {
 
-    /**
-     * Default constructor. 
-     */
-    public ServletContextLifecycleListener() {
-        // TODO Auto-generated constructor stub
-    }
+	public ServletContextLifecycleListener() {
+	}
 
-	/**
-     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
-     */
-    public void contextDestroyed(ServletContextEvent sce)  { 
-         // TODO Auto-generated method stub
-    }
+	public void contextDestroyed(ServletContextEvent sce) {
+	}
 
-	/**
-     * @see ServletContextListener#contextInitialized(ServletContextEvent)
-     */
-    public void contextInitialized(ServletContextEvent sce)  { 
-         // TODO Auto-generated method stub
-    }
-	
+	public void contextInitialized(ServletContextEvent sce) {
+		ServletContext contxt = sce.getServletContext();
+		String baseDataFilePath = contxt.getRealPath("WEB-INF//db//base-data.sql");
+		String createBaseData = contxt.getInitParameter("CreateBaseData");
+		if (createBaseData.equalsIgnoreCase("YES")) {
+			BaseDataDao baseDatedao = new BaseDataDaoImpl();
+			baseDatedao.createBaseData(baseDataFilePath);
+		}
+	}
+
 }
