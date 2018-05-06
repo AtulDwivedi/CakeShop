@@ -21,7 +21,7 @@
     <div id="mainMenu" class="grid_16">
       <ul>
         <li><a href="${pageContext.request.contextPath}/index.html">Home</a></li>
-        <li><a href="#">Cakes</a></li>
+        <li><a href="items/byCat?category=Cake">Cakes</a></li>
         <li><a href="#">Order &amp; Delivery</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">About</a></li>
