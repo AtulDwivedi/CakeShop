@@ -57,4 +57,11 @@ last_name varchar,
 email varchar
 );
 ----
+DROP TABLE IF EXISTS cs_verification;
+----
+create table cs_verification(
+email varchar,
+otp varchar
+)
+----
 stop
