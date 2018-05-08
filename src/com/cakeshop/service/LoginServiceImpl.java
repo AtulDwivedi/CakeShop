@@ -14,9 +14,19 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public boolean checkLogin(String email, String password) {
+	public String checkLogin(String email, String password) {
 				return logindao.checkLogin(email, password);
 		
+	}
+
+	@Override
+	public int saveLogin(String email, String password) {
+		return logindao.saveLogin(email, password);
+	}
+
+	@Override
+	public void changeStatus(String email, String status) {
+		logindao.changeStatus(email, status);
 	}
 
 }

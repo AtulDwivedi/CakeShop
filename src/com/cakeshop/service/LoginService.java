@@ -2,6 +2,9 @@ package com.cakeshop.service;
 
 public interface LoginService {
 	
-	public boolean checkLogin(String email, String password);
+	public String checkLogin(String email, String password);
 
+	int saveLogin(String email, String password);
+	
+	void changeStatus(String email, String status);
 }

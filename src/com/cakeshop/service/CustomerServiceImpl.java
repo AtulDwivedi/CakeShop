@@ -2,14 +2,22 @@ package com.cakeshop.service;
 
 import java.util.List;
 
+import com.cakeshop.dao.CustomerDao;
+import com.cakeshop.dao.CustomerDaoImpl;
 import com.cakeshop.domain.Customer;
 
 public class CustomerServiceImpl implements CustomerService {
 
+	private CustomerDao customerDao;
+	
+	public CustomerServiceImpl() {
+		super();
+		customerDao = new CustomerDaoImpl();
+	}
+	
 	@Override
 	public String saveCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		return null;
+		return customerDao.saveCustomer(customer);
 	}
 
 	@Override
@@ -23,5 +31,7 @@ public class CustomerServiceImpl implements CustomerService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 }

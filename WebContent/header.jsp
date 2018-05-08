@@ -9,7 +9,7 @@
 <body>
  <div id="header" class="grid_16">
       <div id="logo" class="grid_4 alpha">
-        <h1><a href="index.html">CakeShop</a></h1>
+        <h1><a href="index.jsp">CakeShop</a></h1>
         <h2>Famously Delicious</h2>
       </div>
       <div id="headright" class="grid_7 prefix_5 omega">

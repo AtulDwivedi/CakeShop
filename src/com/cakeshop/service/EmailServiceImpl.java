@@ -18,10 +18,10 @@ public class EmailServiceImpl implements EmailService {
 	@Override
 	public void sentEmailOverSSL(Email email) {
 
-		String fromAddr = email.getFromAddress();
+		String fromAddr = "karaninfo2018@gmail.com";
 		String toAddr = email.getToAddress();
-		String userName = "atul.wnw@gmail.com";
-		String password = "#123";
+		String userName = "karaninfo2018@gmail.com";
+		String password = "Sahai@#123";
 		String subject = email.getSubject();
 		String text = email.getEmailContent();
 
