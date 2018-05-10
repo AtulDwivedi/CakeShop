@@ -11,20 +11,13 @@ import com.cakeshop.util.IdGenerator;
 public class LoginDaoImpl implements LoginDao {
 
 	@Override
-<<<<<<< HEAD
-	public boolean checkLogin(String email, String password) {
-		boolean status = false;
-		String loginQuery = "select * from CS_LOGIN where email=? and password=? ";
-		
-		try(Connection con = DbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement(loginQuery)){
+	
 			
-=======
 	public String checkLogin(String email, String password) {
 		String status = "Not Registered";
 		String loginQuery = "select status from CS_LOGIN where email=? and password=?";
 
 		try (Connection con = DbUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement(loginQuery)) {
->>>>>>> master
 			pstmt.setString(1, email);
 			pstmt.setString(2, password);
 
