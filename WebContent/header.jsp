@@ -25,7 +25,7 @@
         <li><a href="#">Order &amp; Delivery</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.jsp">Contact</a></li>
       </ul>
     </div>
     <div id="stickySearch" class="grid_16">
