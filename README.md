@@ -5,8 +5,6 @@ Welcome to **CakeShop**, a purely open source project base on JEE technologies.
 - h2 JAR file needs to be put in **WebContent/WEB-INF/lib** folder
 - mail JAR file needs to be put in **WebContent/WEB-INF/lib** folder
 
-
-
 ## Contributors
 - [@sangues](https://github.com/sangues)
 - [@ksahai1992](https://github.com/ksahai1992)
